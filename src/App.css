@@ -356,6 +356,11 @@ body {
   right: 20%;
   bottom: 6%;
 }
+.image-7 {
+  width: 24vw;
+  right: 30%;
+  top: 38%;
+}
 .image-8 {
   width: 23vw;
   left: 6%;
@@ -368,13 +373,14 @@ body {
 }
 .image-10 {
   width: 30vw;
-  left: 36%;
-  top: 20%;
+  left: 30%;
+  top: 8%;
 }
 
 .image-1:hover,
 .image-2:hover,
 .image-5:hover,
+.image-7:hover,
 .image-8:hover,
 .image-9:hover,
 .image-10:hover {

@@ -21,6 +21,7 @@ import Mexico from "./pages/Mexico/Mexico.jsx";
 import Amigos from "./pages/Amigos/Amigos.jsx";
 import Test from "./pages/Test.jsx";
 import Home from "./pages/Home/Home.jsx";
+import NewYork from "./pages/NewYork/NewYork.jsx";
 
 const ReactRouterSetup = () => {
   const getWindowDimensions = () => {
@@ -66,6 +67,7 @@ const ReactRouterSetup = () => {
               <Route exact path="/look-at-the-flowers" component={Latf} />
               <Route exact path="/lightscapes" component={Lightscapes} />
               <Route exact path="/george-enescu" component={Enescu} />
+              <Route exact path="/new-york" component={NewYork} />
               <Route
                 exact
                 path="/show-look-at-the-flowers"

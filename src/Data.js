@@ -1,11 +1,13 @@
+//galleries
 import I0 from "../src/images/LATF/0.jpg";
-
+import LS1 from "./images/LS/WEB-LS1-RAY-3838-249kb.jpg";
+import AW1 from "./images/AW/WEB--0665-302kb--Angkor--p.1.jpg";
+import I3 from "./images/CAUC/3.jpg";
 import W0762 from "./images/MX/WEB-0762-250kb.jpg";
+import I1 from "./images/NY/1.jpg";
 
-import W0106 from "./images/CAUC/3.jpg";
 ///////// LIGHTSPCAPES //////////
 
-import LS1 from "./images/LS/WEB-LS1-RAY-3838-249kb.jpg";
 import LS2 from "./images/LS/WEB-LS2-RAY-8032-252kb.jpg";
 import LS3 from "./images/LS/WEB-LS3-RAY-6862-253kb.jpg";
 import LS4 from "./images/LS/WEB-LS4-RAY-4194-251kb.jpg";
@@ -23,8 +25,6 @@ import LS15 from "./images/LS/WEB-LS15-RAY-3832-261kb.jpg";
 import LS16 from "./images/LS/WEB-LS16-7742-259kb.jpg";
 
 ///////// ANGKOR WAT //////////
-
-import AW1 from "./images/AW/WEB--0665-302kb--Angkor--p.1.jpg";
 
 ///////// WHY NOW //////////
 
@@ -143,8 +143,13 @@ export const museum = [
         introImg: AW1,
         name: "Angkor Wat",
       },
-      // { url: "cuba", id: 6,introImg: LS1 },
-      // { url: "new york", id:7 ,introImg: W2555 },
+      // {
+      //   url: "quatro-amigos-una-cuba",
+      //   id: 6,
+      //   introImg: I3,
+      //   name: "Quatro Amigos: Una Cuba",
+      // },
+      { url: "new-york", id: 7, introImg: I1, name: "New York" },
     ],
   },
   {
@@ -165,7 +170,7 @@ export const museum = [
       {
         url: "cuatro-amigos",
         id: 10,
-        introImg: W0106,
+        introImg: I3,
         name: "Quatro Amigos:Una Cuba",
       },
     ],
