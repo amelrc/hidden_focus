@@ -2,8 +2,7 @@ import { useState } from "react";
 import { useViewportScroll, useTransform } from "framer-motion";
 import Image from "../../components/Image";
 import Modal from "../../components/Modal";
-import { AnimatedImage, AnimationWrapper, HeaderWrapper } from "../Latf/styles";
-import { ImageWrapper } from "../Lightscapes/styles";
+import { AnimatedImage, AnimationWrapper, HeaderWrapper, H1, ImageWrapper } from "../../generalStyles";
 import { dataNewYork } from "./dataNewYork";
 import I1 from "../../images/NY/1.jpg";
 
@@ -21,7 +20,7 @@ const NewYork = () => {
   };
 
   return (
-    <>
+    <div style={{ backgroundColor: "#f5f5f5" }}>
       <Modal showModal={showModal} setShowModal={setShowModal}>
         <img
           style={{ maxWidth: "100%", maxHeight: "100%", objectFit: "contain" }}
@@ -32,7 +31,7 @@ const NewYork = () => {
 
       <AnimationWrapper>
         <HeaderWrapper>
-          <h1
+          <H1
             animate={{
               opacity: 1,
               bottom: 0,
@@ -41,8 +40,8 @@ const NewYork = () => {
             }}
             style={{ opacity: opacity }}
           >
-            Look at the Flowers
-          </h1>
+            New York
+          </H1>
         </HeaderWrapper>
         <ImageWrapper>
           <AnimatedImage
@@ -73,12 +72,12 @@ const NewYork = () => {
               positionX={el.positionX}
               // speed={el.speed}
               onClick={() => openModal(el)}
-              // whileHover={{ scale: 1.3 }}
+            // whileHover={{ scale: 1.3 }}
             />
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 
