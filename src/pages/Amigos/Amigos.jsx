@@ -65,7 +65,6 @@ const Amigos = () => {
   };
 
   return (
-
     <div style={{ backgroundColor: "#f5f5f5" }}>
       <Modal showModal={showModal} setShowModal={setShowModal}>
         <img
@@ -76,108 +75,197 @@ const Amigos = () => {
       </Modal>
 
       <div data-scroll-container ref={ref}>
-        <div style={{ display: 'flex' }}>
-
-          <div data-scroll-speed="-10" style={{ height: '100vh', width: '100vw', display: 'flex', justifyContent: 'center', alignItems: 'center', whiteSpace: 'normal' }}>
-            <p style={{ font: '4vw Hidden Focus', color: '#431e57' }}>Cuatro Amigos:  Una Cuba</p>
-          </div>
-
-          <div style={{ height: '100vh', width: '30vw' }}>
-            <img
-              style={{ height: '50%' }}
-              src={I1}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-          <div style={{ height: '100vh', width: '60vw', display: 'flex', alignItems: 'flex-end' }}>
-            <img
-              style={{ height: '50%' }}
-              src={I2}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-          <div style={{ height: '100vh', width: '70vw', display: 'flex', alignItems: 'center' }}>
-            <img
-              style={{ height: '60%' }}
-              src={I3}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-          <div style={{ height: '100vh', width: '30vw', display: 'flex' }}>
-            <img
-              style={{ height: '30%' }}
-              src={I4}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-          <div style={{ height: '100vh', width: '50vw', display: 'flex', alignItems: 'flex-end' }}>
-            <img
-              style={{ height: '50%' }}
-              src={I5}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-
-          <div style={{ height: '100vh', width: '50vw', display: 'flex', alignItems: 'center' }}>
-            <img
-              style={{ height: '50%' }}
-              src={I6}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-
-          <div style={{ height: '100vh', width: '70vw', display: 'flex', alignItems: 'center' }}>
-            <img
-              style={{ height: '80%' }}
-              src={I7}
-              alt='kadhjs'
-              onClick={(e) => openModal(e)}
-            />
-          </div>
-
-          <div style={{ height: '100vh', width: '100vw', display: 'flex', alignItems: 'center' }}>
-            <div style={{ width: '60%', display: 'flex', flexDirection: 'column', whiteSpace: 'normal' }}>
-              <p style={{ font: '16px/20px Kumbh Sans', color: '#431e57', margin: '10% auto' }}>
-                Four artists, three Cuban and one Canadian, have come together to share the
-                work they have rendered in painting, paper and photography. The expo
-                celebrates the inner life of our cities and the bountiful nature that
-                nurtures and surrounds them. Together, they invite us to reflect on the
-                broad range of experiences that we share in common, and that lay the
-                foundation for a life lived in harmony.
+        <div style={{ display: "flex" }}>
+          <div
+            data-scroll-speed="-10"
+            style={{
+              height: "100vh",
+              width: "100vw",
+              display: "flex",
+              justifyContent: "center",
+              alignItems: "center",
+              whiteSpace: "normal",
+            }}
+          >
+            <p style={{ font: "4vw Hidden Focus", color: "#431e57" }}>
+              Quatro Amigos: Una Cuba
             </p>
+          </div>
+
+          <div style={{ height: "100vh", width: "30vw" }}>
+            <img
+              style={{ height: "50%" }}
+              src={I1}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+          <div
+            style={{
+              height: "100vh",
+              width: "60vw",
+              display: "flex",
+              alignItems: "flex-end",
+            }}
+          >
+            <img
+              style={{ height: "50%" }}
+              src={I2}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+          <div
+            style={{
+              height: "100vh",
+              width: "70vw",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "60%" }}
+              src={I3}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+          <div style={{ height: "100vh", width: "30vw", display: "flex" }}>
+            <img
+              style={{ height: "30%" }}
+              src={I4}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+          <div
+            style={{
+              height: "100vh",
+              width: "50vw",
+              display: "flex",
+              alignItems: "flex-end",
+            }}
+          >
+            <img
+              style={{ height: "50%" }}
+              src={I5}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+
+          <div
+            style={{
+              height: "100vh",
+              width: "50vw",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "50%" }}
+              src={I6}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+
+          <div
+            style={{
+              height: "100vh",
+              width: "70vw",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <img
+              style={{ height: "80%" }}
+              src={I7}
+              alt="kadhjs"
+              onClick={(e) => openModal(e)}
+            />
+          </div>
+
+          <div
+            style={{
+              height: "100vh",
+              width: "100vw",
+              display: "flex",
+              alignItems: "center",
+            }}
+          >
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                whiteSpace: "normal",
+              }}
+            >
+              <p
+                style={{
+                  font: "16px/20px Kumbh Sans",
+                  color: "#431e57",
+                  margin: "10% auto",
+                }}
+              >
+                Four artists, three Cuban and one Canadian, have come together
+                to share the work they have rendered in painting, paper and
+                photography. The expo celebrates the inner life of our cities
+                and the bountiful nature that nurtures and surrounds them.
+                Together, they invite us to reflect on the broad range of
+                experiences that we share in common, and that lay the foundation
+                for a life lived in harmony.
+              </p>
               <img
-                style={{ width: '100%' }}
+                style={{ width: "100%" }}
                 src={I8}
-                alt='kadhjs'
+                alt="kadhjs"
                 onClick={(e) => openModal(e)}
               />
             </div>
           </div>
 
-          <div style={{ height: '100vh', width: '100vw', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-            <div style={{ width: '60%', display: 'flex', flexDirection: 'column', whiteSpace: 'normal', alignItems: 'center' }}>
-              <p style={{ font: '16px/20px Kumbh Sans', color: '#431e57', margin: '10% auto' }}>
-                Lilia Ulla was a teenager at the time of the Revolution, and has experienced
-                firsthand the remaking of Cuban society as it unfolded over the decades.
-                Through her eyes, we could still catch a glimpse of Havana’s former
-                splendor.
-            <br />
+          <div
+            style={{
+              height: "100vh",
+              width: "100vw",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div
+              style={{
+                width: "60%",
+                display: "flex",
+                flexDirection: "column",
+                whiteSpace: "normal",
+                alignItems: "center",
+              }}
+            >
+              <p
+                style={{
+                  font: "16px/20px Kumbh Sans",
+                  color: "#431e57",
+                  margin: "10% auto",
+                }}
+              >
+                Lilia Ulla was a teenager at the time of the Revolution, and has
+                experienced firsthand the remaking of Cuban society as it
+                unfolded over the decades. Through her eyes, we could still
+                catch a glimpse of Havana’s former splendor.
                 <br />
-            Affectionately known as Dr. Lilly, she introduced Lawrence and me to many of
-            her friends, including Amel, Boris and Abel. New friendships quickly
-            developed, and Lilia happily and capably took charge of making this expo
-            happen.
-          </p>
+                <br />
+                Affectionately known as Dr. Lilly, she introduced Lawrence and
+                me to many of her friends, including Amel, Boris and Abel. New
+                friendships quickly developed, and Lilia happily and capably
+                took charge of making this expo happen.
+              </p>
               <img
-                style={{ width: '70%' }}
+                style={{ width: "70%" }}
                 src={I9}
-                alt='kadhjs'
+                alt="kadhjs"
                 onClick={(e) => openModal(e)}
               />
             </div>

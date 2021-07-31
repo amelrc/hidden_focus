@@ -188,9 +188,6 @@ body {
 
 /* //////////////WONRGGGGGGGGGG ////////////// */
 
-.wrapper {
-  padding: 0 48px;
-}
 .home {
   display: flex;
   justify-content: center;
@@ -211,14 +208,6 @@ body {
   padding-right: 360px;
 }
 
-.inner-header {
-  position: relative;
-  z-index: 10;
-  height: 100px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 .logo a {
   font-weight: 700;
   font-size: 1rem;

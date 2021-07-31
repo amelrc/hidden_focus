@@ -5,11 +5,11 @@ import styled from "styled-components";
 
 import Show from "./components/Show.jsx";
 import Header from "./components/Header.jsx";
-import WrongHeader from "./components/WrongHeader.jsx";
+import WrongHeader from "./components/Menu/WrongHeader";
 import CircleComponent from "./components/Circle.jsx";
 
 import Menu from "./pages/Menu";
-import WhatNow from "./pages/WhyNow";
+import WhatNow from "./pages/WhyNow/WhyNow";
 import Gallery from "./pages/Gallery/Gallery";
 import Influences from "./pages/Influences";
 import Latf from "./pages/Latf/Latf.jsx";

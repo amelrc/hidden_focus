@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 import { museum } from "../Data";
-import Contest from "../images/IMG_1384 Final Metallic Glossy.jpg";
+import Contest from "../images/AW/WEB--1555--252kb--Angkor--p.5.jpg";
 
 const MenuWrapper = styled.div`
   display: flex;

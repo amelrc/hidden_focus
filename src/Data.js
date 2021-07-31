@@ -24,16 +24,6 @@ import LS14 from "./images/LS/WEB-LS14-RAY-3652-246kb.jpg";
 import LS15 from "./images/LS/WEB-LS15-RAY-3832-261kb.jpg";
 import LS16 from "./images/LS/WEB-LS16-7742-259kb.jpg";
 
-///////// ANGKOR WAT //////////
-
-///////// WHY NOW //////////
-
-import xmas from "./images/WHYNOW/WEB-Xmas-img675--314kb.jpg";
-import olp from "./images/WHYNOW/WEB-631-252kb-OLP.jpg";
-import passport from "./images/WHYNOW/WEB-IMG_3980--250kb.jpg";
-import venice from "./images/WHYNOW/WEB-img169-257kb-Venice-by-Ray.jpg";
-import singing from "./images/WHYNOW/WEB--280kb--------Butterfly-Up-High.jpg";
-
 ////////// GEORGE //////////
 
 import W0001 from "./images/GE/WEB-0001-251kb.jpg";
@@ -56,61 +46,6 @@ export const LS = [
   { img: LS14, text: "", css: { width: "50%" } },
   { img: LS15, text: "", css: { width: "100%" } },
   { img: LS16, text: "Elysium", css: { width: "100%" } },
-];
-
-///////// WHY NOW //////////
-
-export const WNData = [
-  {
-    img: xmas,
-    text: "xmas",
-    css: {
-      width: "35%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  },
-  {
-    img: olp,
-    text: "olp",
-    css: {
-      width: "35%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  },
-  {
-    img: passport,
-    text: "pass",
-    css: {
-      width: "35%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  },
-  {
-    img: venice,
-    text: "venice",
-    css: {
-      width: "35%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  },
-  {
-    img: singing,
-    text: "singing",
-    css: {
-      width: "30%",
-      display: "flex",
-      flexDirection: "column",
-      alignItems: "center",
-    },
-  },
 ];
 
 ///////// GALLERY //////////

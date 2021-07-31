@@ -13,9 +13,17 @@ const ArrowLeft = styled.div`
   transform: rotateY(180deg);
 `;
 
+const Text = styled.p`
+  font: 24px/32px Mrs Saint Delafield;
+  color: #301b3c;
+  margin: 16px auto;
+`;
+
 const ImageSlider = ({ slides, styles, currentSlide, withText }) => {
   const [current, setCurrent] = useState(0);
   const length = slides.length;
+
+  console.log(withText);
 
   const nextSlide = () => {
     setCurrent(current === length - 1 ? 0 : current + 1);
@@ -38,7 +46,11 @@ const ImageSlider = ({ slides, styles, currentSlide, withText }) => {
         {slides.map((slide, index) => {
           return (
             <div
-              style={slide.css}
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
               className={
                 index === current ? "slide active" : "slide unsetWidth"
               }
@@ -46,17 +58,13 @@ const ImageSlider = ({ slides, styles, currentSlide, withText }) => {
             >
               {index === current && (
                 <img
-                  onClick={() => currentSlide(slide)}
-                  style={{
-                    maxWidth: "100%",
-                    maxHeight: "100%",
-                    objectFit: "contain",
-                  }}
+                  // onClick={() => currentSlide(slide)}
+                  style={slide.css}
                   src={slide.image}
                   alt="travel"
                 />
               )}
-              {withText && index === current && <p>{slide.text}</p>}
+              {index === current && <Text>{slide.text}</Text>}
             </div>
           );
         })}

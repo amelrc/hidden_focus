@@ -25,15 +25,15 @@ export const HeaderHome = styled.h1`
   }
 `;
 export const SubTitle = styled.h4`
-  font: 16px/26px Lato;
+  font: 14px/26px Kumbh Sans;
   color: #331c65;
-  margin: 8px auto -28px 0;
+  margin: 8px auto -28px 6px;
   @media ${device.tablet} {
-    font: 2vw/2vw Lato;
+    font: 2vw/2vw Kumbh Sans;
     margin: 14px auto -34px 2px;
   }
   @media ${device.small} {
-    margin: 14px auto -4% 2px;
+    margin: 14px auto -4% 18px;
   }
 `;
 export const Phrase = styled.h3`
