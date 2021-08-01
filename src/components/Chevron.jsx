@@ -8,8 +8,24 @@ const Svg = styled.svg`
 
 const Chevron = () => {
   return (
-    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 73.53 8.054">
-      <path d="M73.337,3.633,68.819.107A.5.5,0,0,0,68.011.5V3.538H.5a.5.5,0,0,0,0,1H68.011V7.553a.5.5,0,0,0,.808.394l4.518-3.526A.5.5,0,0,0,73.337,3.633Z" />
+    <Svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72.5 10">
+      <g>
+        <line
+          y1="5"
+          x2="72"
+          y2="5"
+          fill="none"
+          stroke="#b3c53f"
+          stroke-miterlimit="10"
+        />
+        <path
+          d="M63,9.5C63,5,72,5,72,5S63,5,63,.5"
+          fill="none"
+          stroke="#b3c53f"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </g>
     </Svg>
   );
 };

@@ -42,7 +42,7 @@ const ImageSlider = ({ slides, styles, currentSlide, withText }) => {
       className="flex column centerV"
       style={{ width: "80%", margin: "auto", position: "relative" }}
     >
-      <div className="flex centerH centerV" style={{ height: "50vh" }}>
+      <div className="flex centerH centerV">
         {slides.map((slide, index) => {
           return (
             <div

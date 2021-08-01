@@ -1,4 +1,4 @@
-import xmas from "../../images/WHYNOW/xmas.jpg";
+import xmas from "../../images/WHYNOW/xmas.png";
 import olp from "../../images/WHYNOW/olp.jpg";
 import passport from "../../images/WHYNOW/passport.jpg";
 import venice from "../../images/WHYNOW/venice.jpg";

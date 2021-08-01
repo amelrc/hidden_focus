@@ -5,6 +5,14 @@ import AW1 from "./images/AW/WEB--0665-302kb--Angkor--p.1.jpg";
 import I3 from "./images/CAUC/3.jpg";
 import W0762 from "./images/MX/WEB-0762-250kb.jpg";
 import I1 from "./images/NY/1.jpg";
+import Paris from "./images/PARIS/1.jpg";
+import Toronto from "./images/TORONTO/1.jpg";
+import Venice from "./images/VENICE/1.jpg";
+import Caravan from "./images/CARAVAN/1.jpg";
+import FS1 from "./images/FS/1.jpg";
+import ABS1 from "./images/ABSTRACT/1.jpg";
+import JC1 from "./images/JC/1.jpg";
+import EXP1 from "./images/EXPLO/1.jpg";
 
 ///////// LIGHTSPCAPES //////////
 
@@ -59,32 +67,26 @@ export const museum = [
         introImg: I0,
         name: "Look at the Flowers",
       },
-      {
-        url: "lightscapes",
-        id: 2,
-        introImg: LS1,
-        name: "Lightscapes",
-      },
-      // { url: "explorations", id:3 ,introImg: W2555 },
-      // { url: "protraits", id: 4,introImg: LS1 },
+      { url: "lightscapes", id: 2, introImg: LS1, name: "Lightscapes" },
+      // { url: "protraits", id: 3,introImg: 'tbd', name: 'Portraits' },
+      { url: "found-subjects", id: 4, introImg: FS1, name: "Found Subjects" },
+      { url: "abstracts", id: 5, introImg: ABS1, name: "Abstracts" },
+      { url: "just-color", id: 6, introImg: JC1, name: "Just Color" },
+      { url: "explorations", id: 7, introImg: EXP1, name: "Explorations" },
     ],
   },
   {
     floors: "destinations",
     rooms: [
-      {
-        url: "angkor-wat",
-        id: 5,
-        introImg: AW1,
-        name: "Angkor Wat",
-      },
-      // {
-      //   url: "quatro-amigos-una-cuba",
-      //   id: 6,
-      //   introImg: I3,
-      //   name: "Quatro Amigos: Una Cuba",
-      // },
-      { url: "new-york", id: 7, introImg: I1, name: "New York" },
+      { url: "angkor-wat", id: 8, introImg: AW1, name: "Angkor Wat" },
+      { url: "new-york", id: 9, introImg: I1, name: "New York" },
+      { url: "paris", id: 10, introImg: Paris, name: "Paris" },
+      // { url: "havana", id: 10, introImg: '', name: "Havana" },
+      { url: "toronto", id: 10, introImg: Toronto, name: "Toronto" },
+      // { url: "singapur", id: 10, introImg: '', name: "Singapur" },
+      { url: "venice", id: 10, introImg: Venice, name: "Venice" },
+      // { url: "cape-cod", id: 10, introImg: '', name: "Cape Code" },
+      { url: "caravan", id: 10, introImg: Caravan, name: "Caravan" },
     ],
   },
   {
@@ -106,7 +108,7 @@ export const museum = [
         url: "cuatro-amigos",
         id: 10,
         introImg: I3,
-        name: "Quatro Amigos:Una Cuba",
+        name: "Quatro Amigos: Una Cuba",
       },
     ],
   },

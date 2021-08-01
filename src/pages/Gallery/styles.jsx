@@ -68,3 +68,12 @@ export const Hover = styled.div`
     }
   }
 `;
+
+export const Title = styled.p`
+  font: 30px / 30px "Hidden Focus";
+  text-transform: capitalize;
+  position: absolute;
+  top: 50%;
+  z-index: 1;
+  color: #b3c53f;
+`;
