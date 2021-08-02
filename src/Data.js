@@ -13,6 +13,7 @@ import FS1 from "./images/FS/1.jpg";
 import ABS1 from "./images/ABSTRACT/1.jpg";
 import JC1 from "./images/JC/1.jpg";
 import EXP1 from "./images/EXPLO/1.jpg";
+import GE from "./images/GE/WEB-8782-259kb.jpg";
 
 ///////// LIGHTSPCAPES //////////
 
@@ -31,10 +32,6 @@ import LS13 from "./images/LS/WEB-LS13-RAY-8422-312kb.jpg";
 import LS14 from "./images/LS/WEB-LS14-RAY-3652-246kb.jpg";
 import LS15 from "./images/LS/WEB-LS15-RAY-3832-261kb.jpg";
 import LS16 from "./images/LS/WEB-LS16-7742-259kb.jpg";
-
-////////// GEORGE //////////
-
-import W0001 from "./images/GE/WEB-0001-251kb.jpg";
 
 ///////// LIGHTSPCAPES //////////
 
@@ -95,7 +92,7 @@ export const museum = [
       {
         url: "george-enescu",
         id: 8,
-        introImg: W0001,
+        introImg: GE,
         name: "George Enescu's Secret Garden",
       },
       {
