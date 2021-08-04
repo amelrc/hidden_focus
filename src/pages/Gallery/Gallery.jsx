@@ -7,6 +7,11 @@ import { Hover, P, Title } from "./styles";
 import AutoSlides from "../../components/autoSlider";
 import styled from "styled-components";
 
+import img1 from '../../images/CAUC/1.jpg'
+import img2 from '../../images/CAUC/2.jpg'
+import img3 from '../../images/CAUC/3.jpg'
+import img4 from '../../images/CAUC/4.jpg'
+
 const Titulo = styled.p`
   font-size: 18px;
   font-weight: 700;
@@ -56,7 +61,7 @@ const Loader = ({ match }) => {
               initial="hidden"
               animate="show"
               exit="exit"
-              style={{ display: "flex", height: "100vh" }}
+              style={{ display: "grid", gridTemplateColumns: '1fr 1fr 1fr' }}
             >
               {museum.map((room) =>
                 room.floors === topic ? (
@@ -75,84 +80,53 @@ const Loader = ({ match }) => {
                     </motion.div>
                   ))
                 ) : match.path === "/gallery" ? (
-                  <div style={{ margin: "4%" }}>
-                    <Link to={`menu/${room.floors}`}>
-                      <Title>{room.floors}</Title>
-                      <AutoSlides
-                        slides={room.rooms.map((img) => img.introImg)}
-                      />
-                    </Link>
+                  <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+
+                    <Title>{room.floors}</Title>
+
+                    <Slideshow
+                      style={{ overflow: 'hidden', width: '50%' }}
+                      controles={false}
+                      autoplay={true}
+                      velocidad='500'
+                      intervalo='2000'>
+                      {room.rooms.map((r, i) => {
+                        return (<Slide>
+                          {/* <Link to={`menu/${room.floors}`}> */}
+                          <img style={{ objectFit: 'contain', width: '100%', height: '100%' }} src={r.introImg} alt="" />
+                          {/* </Link> */}
+                        </Slide>)
+                      })}
+                    </Slideshow>
                   </div>
+
+
                 ) : null
               )}
             </motion.div>
           </motion.div>
 
           <main>
-            <Titulo>Productos Destacados</Titulo>
-            <Slideshow controles={true}>
-              <Slide>
-                <a href="https://www.falconmaters.com">
-                  <img src={img1} alt="" />
-                </a>
-                <TextoSlide>
-                  <p>15% descuento en productos Apple</p>
-                </TextoSlide>
-              </Slide>
-              <Slide>
-                <a href="https://www.falconmaters.com">
-                  <img src={img2} alt="" />
-                </a>
-                <TextoSlide>
-                  <p>15% descuento en productos Apple</p>
-                </TextoSlide>
-              </Slide>
-              <Slide>
-                <a href="https://www.falconmaters.com">
-                  <img src={img3} alt="" />
-                </a>
-                <TextoSlide>
-                  <p>15% descuento en productos Apple</p>
-                </TextoSlide>
-              </Slide>
-              <Slide>
-                <a href="https://www.falconmaters.com">
-                  <img src={img4} alt="" />
-                </a>
-                <TextoSlide>
-                  <p>15% descuento en productos Apple</p>
-                </TextoSlide>
-              </Slide>
-            </Slideshow>
-
-            <Titulo>Productos Destacados</Titulo>
-            <Slideshow
+            <Slideshow style={{ width: '20%', overflow: 'hidden' }}
               controles={false}
               autoplay={true}
               velocidad="500"
-              intervalo="3000"
+              intervalo="6000"
             >
+              <Link to='/menu/theme'>
+                <Slide>
+                  <img style={{ objectFit: 'contain', width: '100%', height: '100%' }} src={img1} alt="" />
+                </Slide>
+              </Link>
               <Slide>
-                <a href="https://www.falconmaters.com">
-                  <img src={img1} alt="" />
-                </a>
-                <TextoSlide colorFondo="navy">
-                  <p>15% descuento en productos Apple</p>
-                </TextoSlide>
-              </Slide>
-              <Slide>
-                <a href="https://www.falconmaters.com">
-                  <img src={img2} alt="" />
-                </a>
-                <TextoSlide>
-                  <p>15% descuento en productos Apple</p>
-                </TextoSlide>
+                <img style={{ objectFit: 'contain', width: '100%', height: '100%' }} src={img2} alt="" />
               </Slide>
             </Slideshow>
           </main>
+
         </motion.div>
       </AnimatePresence>
-    </AnimateSharedLayout>
+    </AnimateSharedLayout >
   );
 };
 

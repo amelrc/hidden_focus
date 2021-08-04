@@ -7,8 +7,9 @@ const Slideshow = ({
   children,
   controles = false,
   autoplay = false,
-  velocidad = "500",
-  intervalo = "5000",
+  velocidad = "",
+  intervalo = "",
+  style
 }) => {
   const slideshow = useRef(null);
   const intervaloSlideshow = useRef(null);
@@ -16,7 +17,7 @@ const Slideshow = ({
   const siguiente = useCallback(() => {
     // Comprobamos que el slideshow tenga elementos
     if (slideshow.current.children.length > 0) {
-      console.log("Siguiente");
+      // console.log("Siguiente");
 
       // Obtenemos el primer elemento del slideshow.
       const primerElemento = slideshow.current.children[0];
@@ -46,7 +47,7 @@ const Slideshow = ({
   }, [velocidad]);
 
   const anterior = () => {
-    console.log("Anterior");
+    // console.log("Anterior");
     if (slideshow.current.children.length > 0) {
       // Obtenemos el ultimo elemento del slideshow.
       const index = slideshow.current.children.length - 1;
@@ -88,11 +89,13 @@ const Slideshow = ({
   }, [autoplay, intervalo, siguiente]);
 
   return (
-    <ContenedorPrincipal>
+    <ContenedorPrincipal style={style}>
       <ContenedorSlideshow ref={slideshow}>{children}</ContenedorSlideshow>
       {controles && (
         <Controles>
-          <Boton onClick={anterior}>{/* <FlechaIzquierda /> */}</Boton>
+          <Boton onClick={anterior}>
+            {/* <FlechaIzquierda /> */}
+          </Boton>
           <Boton derecho onClick={siguiente}>
             {/* <FlechaDerecha /> */}
           </Boton>
@@ -109,6 +112,7 @@ const ContenedorPrincipal = styled.div`
 const ContenedorSlideshow = styled.div`
   display: flex;
   flex-wrap: nowrap;
+  // overflow: hidden
 `;
 
 const Slide = styled.div`
@@ -116,13 +120,7 @@ const Slide = styled.div`
   overflow: hidden;
   transition: 0.3s ease all;
   z-index: 10;
-  /* max-height: 500px; */
   position: relative;
-
-  img {
-    width: 100%;
-    vertical-align: top;
-  }
 `;
 
 const TextoSlide = styled.div`
@@ -170,9 +168,9 @@ const Boton = styled.button`
 
   path {
     filter: ${(props) =>
-      props.derecho
-        ? "drop-shadow(-2px 0px 0px #fff)"
-        : "drop-shadow(2px 0px 0px #fff)"};
+    props.derecho
+      ? "drop-shadow(-2px 0px 0px #fff)"
+      : "drop-shadow(2px 0px 0px #fff)"};
   }
 
   ${(props) => (props.derecho ? "right: 0" : "left: 0")}
