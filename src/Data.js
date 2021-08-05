@@ -75,15 +75,15 @@ export const museum = [
   {
     floors: "destinations",
     rooms: [
-      { url: "angkor-wat", id: 8, introImg: AW1, name: "Angkor Wat" },
-      { url: "new-york", id: 9, introImg: I1, name: "New York" },
-      { url: "paris", id: 10, introImg: Paris, name: "Paris" },
-      // { url: "havana", id: 10, introImg: '', name: "Havana" },
-      { url: "toronto", id: 10, introImg: Toronto, name: "Toronto" },
-      // { url: "singapur", id: 10, introImg: '', name: "Singapur" },
-      { url: "venice", id: 10, introImg: Venice, name: "Venice" },
-      // { url: "cape-cod", id: 10, introImg: '', name: "Cape Code" },
-      { url: "caravan", id: 10, introImg: Caravan, name: "Caravan" },
+      { url: "angkor-wat", id: 1, introImg: AW1, name: "Angkor Wat" },
+      { url: "new-york", id: 2, introImg: I1, name: "New York" },
+      { url: "paris", id: 3, introImg: Paris, name: "Paris" },
+      // { url: "havana", id: 4, introImg: '', name: "Havana" },
+      { url: "toronto", id: 5, introImg: Toronto, name: "Toronto" },
+      // { url: "singapur", id: 6, introImg: '', name: "Singapur" },
+      { url: "venice", id: 7, introImg: Venice, name: "Venice" },
+      // { url: "cape-cod", id: 8, introImg: '', name: "Cape Code" },
+      { url: "caravan", id: 9, introImg: Caravan, name: "Caravan" },
     ],
   },
   {
@@ -91,19 +91,19 @@ export const museum = [
     rooms: [
       {
         url: "george-enescu",
-        id: 8,
+        id: 1,
         introImg: GE,
         name: "George Enescu's Secret Garden",
       },
       {
         url: "digital-table-book",
-        id: 9,
+        id: 2,
         introImg: W0762,
         name: "A Digital Coffee Table Book",
       },
       {
         url: "cuatro-amigos",
-        id: 10,
+        id: 3,
         introImg: I3,
         name: "Quatro Amigos: Una Cuba",
       },

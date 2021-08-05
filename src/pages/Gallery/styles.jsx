@@ -1,6 +1,49 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Image from "../../components/Image";
+import { Link } from "react-router-dom";
+
+export const GalleryWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+
+  height: 100vh;
+`;
+
+export const Title = styled.p`
+  font: 40px "Hidden Focus";
+  text-transform: capitalize;
+  position: absolute;
+  z-index: 1;
+  color: #6a0dad;
+  -webkit-text-stroke: 1px #6a0dad;
+`;
+
+export const LinkWrapper = styled(Link)`
+  display: flex;
+  align-items: center;
+`;
+
+export const Container = styled(motion.div)`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  width: 90%;
+  margin: auto;
+  & ${GalleryWrapper}:nth-child(1) {
+    align-items: flex-start;
+  }
+  & ${GalleryWrapper}:nth-child(3) {
+    align-items: flex-end;
+    // justify-content: flex-end;
+  }
+
+  & ${GalleryWrapper}:nth-child(2) ${LinkWrapper} {
+    justify-content: center;
+  }
+  & ${GalleryWrapper}:nth-child(3) ${LinkWrapper} {
+    justify-content: flex-end;
+  }
+`;
 
 export const Ul = styled.ul`
   height: 70%;
@@ -67,13 +110,4 @@ export const Hover = styled.div`
       background-color: #1d0d2559;
     }
   }
-`;
-
-export const Title = styled.p`
-  font: 30px / 30px "Hidden Focus";
-  text-transform: capitalize;
-  position: absolute;
-  top: 50%;
-  z-index: 1;
-  color: #b3c53f;
 `;

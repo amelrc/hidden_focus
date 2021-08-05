@@ -340,39 +340,51 @@ body {
   right: 12%;
   top: 12%;
 }
-.image-5 {
+.image-3 {
   width: 30vw;
   right: 20%;
   bottom: 6%;
 }
-.image-7 {
+.image-4 {
   width: 24vw;
   right: 30%;
   top: 42%;
 }
-.image-8 {
+.image-5 {
   width: 23vw;
   left: 6%;
   top: 16%;
 }
-.image-9 {
+.image-6 {
   width: 20vw;
   left: 14%;
   top: 38%;
 }
-.image-10 {
-  width: 30vw;
+.image-7 {
+  width: 24vw;
+  left: 45%;
+  top: 20%;
+}
+.image-8 {
+  width: 23vw;
+  left: 30%;
+  top: 8%;
+}
+.image-9 {
+  width: 24vw;
   left: 30%;
   top: 8%;
 }
 
 .image-1:hover,
 .image-2:hover,
+.image-3:hover,
+.image-4:hover,
 .image-5:hover,
+.image-6:hover,
 .image-7:hover,
 .image-8:hover,
-.image-9:hover,
-.image-10:hover {
+.image-9:hover {
   z-index: 1;
 }
 .image-block {
@@ -392,13 +404,23 @@ body {
   align-items: center;
 }
 
-.slide {
+.slideshowSlider-0 {
+  transition-delay: 0s;
+}
+.slideshowSlider-1 {
+  transition-delay: 1s;
+}
+.slideshowSlider-2 {
+  transition-delay: 2s;
+}
+
+/* .slide {
   display: inline-block;
 
   height: 400px;
   width: 100%;
   border-radius: 40px;
-}
+} */
 
 /* Buttons */
 
