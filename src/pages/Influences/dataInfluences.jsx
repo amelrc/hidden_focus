@@ -12,6 +12,7 @@ import Cathy from "../../images/INFL/WEB-Infl-9.-676-250kb.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
+//hi
 
 export const AHref = styled.a`
   text-decoration: none;
