@@ -1,11 +1,15 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import ImageSlider from "../../components/imageSlider";
-import { info } from './dataInfluences'
+import { info } from "./dataInfluences";
 
 const Dot = styled.div`
   background: ${({ selected, past }) =>
-    selected ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;` : past ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;` : `#14091A 0% 0% no-repeat padding-box`};
+    selected
+      ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;`
+      : past
+      ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;`
+      : `#14091A 0% 0% no-repeat padding-box`};
   width: ${({ selected }) => (selected ? `16px` : `10px`)};
   height: ${({ selected }) => (selected ? `16px` : `10px`)};
   border-radius: 50%;
@@ -37,15 +41,19 @@ const Influences = () => {
   ));
 
   return (
-    <div style={{ backgroundColor: "#180920", height: '100vh' }}>
-      <h1 style={{
-        font: '24px/40px Hidden Focus',
-        letterSpacing: 1.44,
-        color: '#F9EFFF',
-        width: '80%',
-        margin: 'auto',
-        padding: '16px 0',
-      }}>Influences</h1>
+    <div style={{ backgroundColor: "#180920", height: "100vh" }}>
+      <h1
+        style={{
+          font: "24px/40px Hidden Focus",
+          letterSpacing: 1.44,
+          color: "#F9EFFF",
+          width: "80%",
+          margin: "auto",
+          padding: "16px 0",
+        }}
+      >
+        Influences
+      </h1>
       <div
         style={{
           // alignSelf: "center",
@@ -54,19 +62,20 @@ const Influences = () => {
           // display: "flex",
           // flexDirection: "column",
           // alignItems: "center",
-          backgroundColor: '#8b33b9',
-          padding: 24
+          backgroundColor: "#8b33b9",
+          padding: 24,
         }}
       >
-
         <div
           className="flex"
-          style={{
-            // padding: 60,
-            // backgroundColor: "#1d0d25",
-            // margin: 40,
-            // height: "60vh",
-          }}
+          style={
+            {
+              // padding: 60,
+              // backgroundColor: "#1d0d25",
+              // margin: 40,
+              // height: "60vh",
+            }
+          }
         >
           <div
             style={{
@@ -85,6 +94,7 @@ const Influences = () => {
                   position: "absolute",
                   bottom: "2%",
                   width: "100%",
+                  backgroundColor: "pink",
                 }}
                 slides={state.image}
               />
@@ -99,10 +109,11 @@ const Influences = () => {
               // flexDirection: "column",
               // justifyContent: "flex-end",
               width: "50%",
-              color: '#F9EFFF'
+              color: "#F9EFFF",
+              overflow: "scroll",
             }}
           >
-            <h2 style={{ font: "30px/46px Mrs Saint Delafield", margin: 0, }} >
+            <h2 style={{ font: "30px/46px Mrs Saint Delafield", margin: 0 }}>
               {state.name}
             </h2>
             <span
