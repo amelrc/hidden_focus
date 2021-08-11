@@ -11,7 +11,7 @@ import CircleComponent from "./components/Circle.jsx";
 import Menu from "./pages/Menu";
 import WhatNow from "./pages/WhyNow/WhyNow";
 import Gallery from "./pages/Gallery/Gallery";
-import Influences from "./pages/Influences";
+import Influences from "./pages/Influences/Influences";
 import Latf from "./pages/Latf/Latf.jsx";
 import Lightscapes from "./pages/Lightscapes/Lightscapes.jsx";
 import Contest from "./pages/Contest.jsx";
