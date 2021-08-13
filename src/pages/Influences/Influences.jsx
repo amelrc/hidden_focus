@@ -6,17 +6,18 @@ import { info } from "./dataInfluences";
 const Dot = styled.div`
   background: ${({ selected, past }) =>
     selected
-      ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;`
+      ? `transparent linear-gradient(180deg, #B3C53F 0%, #444B18 100%) 0% 0% no-repeat padding-box;`
       : past
-      ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;`
-      : `#14091A 0% 0% no-repeat padding-box`};
-  width: ${({ selected }) => (selected ? `16px` : `10px`)};
-  height: ${({ selected }) => (selected ? `16px` : `10px`)};
+        ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;`
+        : `#14091A 0% 0% no-repeat padding-box`};
+     
+  width: 10px;
+  height: 10px;
   border-radius: 50%;
   border: ${({ selected, past }) =>
-    selected || past ? `solid 4px #b0c13f` : `solid 1px gray`};
+    selected ? `solid 1px #B3C53F` : past ? `solid 1px #8a33b9` : `solid 1px #666666`};
   position: absolute;
-  top: ${({ selected }) => (selected ? `28px` : `36px`)};
+  top: 36px;
 `;
 
 const Year = styled.span`
@@ -24,6 +25,7 @@ const Year = styled.span`
   color: #b3c53f;
   position: absolute;
   opacity: ${({ selected }) => (selected ? 1 : 0)};
+  top: 54px;
 `;
 
 const Influences = () => {
@@ -62,7 +64,7 @@ const Influences = () => {
           // display: "flex",
           // flexDirection: "column",
           // alignItems: "center",
-          backgroundColor: "#8b33b9",
+          // backgroundColor: "#8b33b9",
           padding: 24,
         }}
       >
@@ -73,16 +75,17 @@ const Influences = () => {
               // padding: 60,
               // backgroundColor: "#1d0d25",
               // margin: 40,
-              // height: "60vh",
+              height: "60vh",
+              justifyContent: 'space-between'
             }
           }
         >
           <div
             style={{
-              // display: "flex",
+              display: "flex",
               // justifyContent: "center",
-              // alignItems: "center",
-              width: "50%",
+              alignItems: "center",
+              width: "40%",
             }}
           >
             {state.image.length > 1 ? (
@@ -94,7 +97,6 @@ const Influences = () => {
                   position: "absolute",
                   bottom: "2%",
                   width: "100%",
-                  backgroundColor: "pink",
                 }}
                 slides={state.image}
               />
@@ -110,94 +112,60 @@ const Influences = () => {
               // justifyContent: "flex-end",
               width: "50%",
               color: "#F9EFFF",
-              overflow: "scroll",
+              position: "relative",
             }}
           >
             <h2 style={{ font: "30px/46px Mrs Saint Delafield", margin: 0 }}>
               {state.name}
             </h2>
-            <span
-              style={{
-                font: "300 14px/18px Kumbh Sans",
-                overflow: "scroll",
-                height: "40%",
-              }}
-            >
-              {state.content}
-            </span>
-          </div>
-        </div>
-        {/* ///////// */}
-        <div
-          style={{
-            width: "80%",
-            position: "relative",
-            display: "flex",
-
-            margin: "auto",
-          }}
-        >
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              position: "absolute",
-              width: "100%",
-            }}
-          >
-            <div
-              style={{
-                height: 1,
-                backgroundColor: "gray",
-                width: "100%",
-                position: "absolute",
-              }}
-            ></div>
-            <div
-              style={{
-                height: 4,
-                backgroundColor: "#b0c13f",
-                width: `calc(${width} * ${length}%)`,
-                position: "absolute",
-              }}
-            ></div>
-          </div>
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-              marginTop: -24,
-              position: "absolute",
-            }}
-          ></div>
-
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              width: "100%",
-              marginTop: -43,
-              position: "absolute",
-            }}
-          >
-            {info.map((date, i) => (
-              <div
-                key={i}
-                className="flex column centerV"
-                style={{ position: "relative" }}
+            <div style={{ height: '80%', overflow: 'scroll' }}>
+              <span
+                style={{
+                  font: "300 14px/18px Kumbh Sans",
+                  overflow: "scroll",
+                  height: "40%",
+                }}
               >
-                <Year selected={i === state.id}>{date.date}</Year>
-                <Dot
-                  selected={i === state.id}
-                  past={i < state.id}
-                  onClick={() => handleNext(i)}
-                ></Dot>
-              </div>
-            ))}
+                {state.content}
+              </span>
+
+            </div>
+            <div style={{
+              height: 30, background: 'transparent linear-gradient(180deg, #14091A00 0%, #14091A 100%) 0% 0% no-repeat padding-box',
+              position: 'absolute',
+              width: '100%',
+              bottom: -1
+            }}></div>
           </div>
+
         </div>
       </div>
+      {/* ///////// */}
+      <div style={{ width: "80%", position: "relative", display: "flex", margin: "auto" }} >
+        <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", width: "100%" }}>
+          <div style={{ height: 1, backgroundColor: "#666666", width: "100%", position: "absolute" }}></div>
+          <div style={{ height: 1, backgroundColor: "#8A33B9", width: `calc(${width} * ${length}%)`, position: "absolute" }}></div>
+        </div>
+        <div style={{ display: "flex", justifyContent: "space-between", width: "100%", position: "absolute" }}></div>
+
+        <div style={{ display: "flex", justifyContent: "space-between", width: "100%", position: "absolute", top: -42 }}>
+          {info.map((date, i) => (
+            <div
+              key={i}
+              className="flex column centerV"
+              style={{ position: "relative" }}
+            >
+              <Year selected={i === state.id}>{date.date}</Year>
+              <Dot
+                selected={i === state.id}
+                past={i < state.id}
+                onClick={() => handleNext(i)}
+              ></Dot>
+            </div>
+          ))}
+        </div>
+      </div>
+
     </div>
   );
 };

@@ -12,8 +12,6 @@ import Cathy from "../../images/INFL/WEB-Infl-9.-676-250kb.jpg";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
 
-//hi
-
 export const AHref = styled.a`
   text-decoration: none;
   color: #ced4a7;
@@ -234,75 +232,75 @@ export const info = [
 		id: 0,
 		date: "1965",
 		image: [
-			{ image: Enrico, css: { width: "100%" } },
-			{ image: Circles, css: { width: "70%" } },
+			{ image: Enrico, css: { width: '100%', objectFit: 'contain', height: '100%' }, },
+			{ image: Circles, css: { width: '60%', objectFit: 'contain', height: '100%' }, },
 		],
 		name: "Enrico Garzilli",
 		content: EnricoText,
-		css: { width: "70%" },
+
 	},
 	{
 		id: 1,
 		date: "1981",
-		image: [{ img: Robert, css: { width: "70%" } }],
+		image: [{ img: Robert, css: { width: '100%', objectFit: 'contain', height: '100%' } }],
 		name: "Robert Mann",
 		content: RobertText,
-		css: { width: "80%" },
+		css: { width: '100%', objectFit: 'contain', height: '100%' },
 	},
 	{
 		id: 2,
 		date: "1991",
-		image: [{ img: Lawrence, css: { width: "60%" } }],
+		image: [{ img: Lawrence, css: { width: '100%', objectFit: 'contain', height: '100%' } }],
 		name: "Lawrence Tan",
 		content: LawrenceText,
-		css: { width: "80%" },
+
 	},
 	{
 		id: 3,
 		date: "2003",
-		image: [{ img: Laliberte, css: { width: "70%" } }],
+		image: [{ img: Laliberte, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
 		name: "Robert Laliberte",
 		content: LaliberteText,
-		css: { width: "80%" },
+		// css: { width: "80%" },
 	},
 	{
 		id: 4,
 		date: "2005",
-		image: [{ img: Dorothy, css: { width: "70%" } }],
+		image: [{ img: Dorothy, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
 		name: "Dorothy Stone",
 		content: DorothyText,
-		css: { width: "70%" },
+		// css: { width: "70%" },
 	},
 	{
 		id: 5,
 		date: "2006",
-		image: [{ img: Carvalho, css: { width: "70%" } }],
+		image: [{ img: Carvalho, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
 		name: "John Caravalho",
 		content: JohnText,
-		css: { width: "70%" },
+		// css: { width: "70%" },
 	},
 	{
 		id: 6,
 		date: "2009",
-		image: [{ img: Amel, css: { width: "60%" } }],
+		image: [{ img: Amel, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
 		name: "Amel Caballero",
 		content: AmelText,
-		css: { width: "70%" },
+		// css: { width: "70%" },
 	},
 	{
 		id: 7,
 		date: "2018",
-		image: [{ img: Michelle, css: { width: "70%" } }],
+		image: [{ img: Michelle, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
 		name: "Michelle Patience",
 		content: MichelleText,
-		css: { width: "70%" },
+		// css: { width: "70%" },
 	},
 	{
 		id: 8,
 		date: "1978",
-		image: [{ img: Cathy, css: { width: "70%" } }],
+		image: [{ img: Cathy, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
 		name: "Cathy",
 		content: CathyText,
-		css: { width: "70%" },
+		// css: { width: "70%" },
 	},
 ];
