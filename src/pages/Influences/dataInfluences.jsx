@@ -20,7 +20,7 @@ export const AHref = styled.a`
 
 
 export const EnricoText = (
-	<div>
+	<>
 		<p>
 			Artist, scholar, musician, composer, dramatist and teacher. Friend and
 			mentor since college days. His insight and compassion are a formative and
@@ -29,17 +29,18 @@ export const EnricoText = (
 			Circles Without Center was published by Harvard University press in 1972.
 			I wonder at the synchronicity of our titles and cover art...
       </p>
-		<p>
+		<br />
+		<p style={{ paddingBottom: '16%' }}>
 			Explore{" "}
 			<AHref href="https://www.enricogarzilli.com/">Enrico’s world</AHref>, and
         hear the music.
       </p>
-	</div>
+	</>
 );
 
 export const RobertText = (
-	<div>
-		<p>
+	<>
+		<p style={{ paddingBottom: '16%' }}>
 			Bob introduced me to the world of collectible photography shortly after I
         moved to New York in 1980. He founded{" "}
 			<AHref href="http://www.robertmann.com/">Robert Mann Gallery</AHref> in
@@ -50,11 +51,11 @@ export const RobertText = (
         years, Bob has sunk deep roots in the classical photography market, while
         introducing and publishing the work of significant new artists.
       </p>
-	</div>
+	</>
 );
 
 export const LawrenceText = (
-	<div>
+	<>
 		<p>
 			Singer/Actor/Dancer. We met in Toronto in 1991, made a home together in
 			1996, and have been married since 2004. More than “just” a performance
@@ -62,6 +63,7 @@ export const LawrenceText = (
 			physical bearing and the rich timbre of his voice a sense of deep
 			connection with our primal source of energy.
       </p>
+		<br />
 		<p>
 			His persistent devotion to performance excellence even in the face of
         chronic illness has inspired me, and the chance to{" "}
@@ -70,7 +72,8 @@ export const LawrenceText = (
 			</AHref>{" "}
         and sing a song has been a source of great joy.
       </p>
-		<p>
+		<br />
+		<p style={{ paddingBottom: '16%' }}>
 			Watch his spellbinding rendition of{" "}
 			<AHref href="https://www.youtube.com/watch?v=ROppespP1Jk">
 				“Music of the Night”{" "}
@@ -85,11 +88,11 @@ export const LawrenceText = (
         </AHref>
         .
       </p>
-	</div>
+	</>
 );
 
 export const LaliberteText = (
-	<div>
+	<>
 		<p>
 			Montreal was a prominent stop on my semi annual research marketing tours
 			for RBC. Over the years, I had noted and enjoyed Robert’s cover photos for
@@ -100,24 +103,26 @@ export const LaliberteText = (
 			power to connect, qualities that since the early 1980’s had supported his
 			role as a major player in the emergence of gay culture in Montreal.
       </p>
+		<br />
 		<p>
 			On subsequent visits I would look forward to catching up with him over
 			dinner, excited for the chance to show him a few shots from my most recent
 			travels. His observations were always supportive, measured and on point.
       </p>
-		<p>
+		<br />
+		<p style={{ paddingBottom: '16%' }}>
 			Sitting in Robert’s living room, I could feel from his images around me
 			the ironic stare of Diane Arbus, the streetwise capture of Robert Frank,
 			the canine playfulness of William Wegman, the erotic thrust and elegance
 			of Robert Mapplethorpe. But no lame stylistic imitations here. Just pure
 			Robert, and his unique vision of our shared humanity. Salut, Robert!
       </p>
-	</div>
+	</>
 );
 
 export const DorothyText = (
-	<div>
-		<p>
+	<>
+		<p style={{ paddingBottom: '16%' }}>
 			My Ariadne. In the summer of 20XX, Dorothy conducted a vocal masterclass
 			in Toronto, and I decided to attend as an auditor. She had apprenticed for
 			many years with bel canto master Cornelius L. Reid, and internalized the
@@ -126,11 +131,11 @@ export const DorothyText = (
 			that if ever I was to deliver a song the way I felt it should be sung,
 			Dorothy was the one to enable it. And so it has been!
       </p>
-	</div>
+	</>
 );
 
 export const JohnText = (
-	<div>
+	<>
 		<p>
 			For several years John had been making 8.5 x 11 prints from my photo
 			exploits on business trips and holidays. One day in late 2009, he took me
@@ -146,18 +151,19 @@ export const JohnText = (
 				He was so right!
         </Link>
 		</p>
-		<p>
+		<br />
+		<p style={{ paddingBottom: '16%' }}>
 			John is an accomplished portrait artist and dauntless teacher. With
 			infinite patience he has guided me into the age of digital photography,
 			and freely shared his encyclopedic knowledge of Photoshop and Picassa.
         Thanks to him, my pictures are now ready to be shown. Meet{" "}
 			<AHref href="https://exposures.ca/">John at Exposures Photography</AHref>.
       </p>
-	</div>
+	</>
 );
 
 export const AmelText = (
-	<div>
+	<>
 		<p>
 			World class painter, sculptor, graphic artist and designer now living in
 			the Netherlands. We met in his native Havana in early 2010, where his
@@ -171,13 +177,14 @@ export const AmelText = (
 				'Quattro Amigos, Una Cuba.'
         </Link>
 		</p>
-		<p>
+		<br />
+		<p style={{ paddingBottom: '16%' }}>
 			Since moving to the Netherlands, Amel has begun exploring the artistic
         potential of the digital world. It is{" "}
 			<AHref href="https://amelrc.github.io/artwork/#/">Amel</AHref> who has
         designed and built this website for Hidden Focus.
       </p>
-	</div>
+	</>
 );
 
 export const MichelleText = (
@@ -187,6 +194,7 @@ export const MichelleText = (
 			renovator and skilled graphic artist, spent a disproportionate part of her
 			youth touring museums and galleries across North America and abroad.
       </p>
+		<br />
 		<p>
 			We became friends in June 2018 when Lawrence and I prepared to move out of
 			Toronto’s downtown core to the wilds of Scarborough. For a gruelling week,
@@ -194,6 +202,7 @@ export const MichelleText = (
 			to the move. We talked a lot about art, and I promised to show her some of
 			my pictures after settling in.
       </p>
+		<br />
 		<p>
 			So, one day last Spring, after touring my photo world of Cuba, Cape Cod,
 			New York and Paris, and seeing the earliest of the “Look at the Flowers”
@@ -204,6 +213,7 @@ export const MichelleText = (
 			you, even you won’t really be able to appreciate what you’ve got until you
 			see them bigger.”
       </p>
+		<br />
 		<p>
 			As she put on her coat that day to leave, she turned to me with a kind but
 			troubled look and said: “As much as I love your pictures, I must tell you
@@ -211,7 +221,8 @@ export const MichelleText = (
 			that your work has been hidden away for so long in little boxes. They must
 			be shown! You must find a way to do that. I will help any way I can.”
       </p>
-		<p>
+		<br />
+		<p style={{ paddingBottom: '16%' }}>
 			Deepest thanks, Michelle, for pushing my little boxes out of the nest!
       </p>
 	</>

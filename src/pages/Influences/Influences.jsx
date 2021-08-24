@@ -1,32 +1,7 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import { Dot, Year, InfluencesText, InfluencesName, PairWrapper, Heading, InfluencesTextWrapper } from "./styles";
 import ImageSlider from "../../components/imageSlider";
 import { info } from "./dataInfluences";
-
-const Dot = styled.div`
-  background: ${({ selected, past }) =>
-    selected
-      ? `transparent linear-gradient(180deg, #B3C53F 0%, #444B18 100%) 0% 0% no-repeat padding-box;`
-      : past
-        ? `transparent linear-gradient(180deg, #8A33B9 0%, #531F6F 100%) 0% 0% no-repeat padding-box;`
-        : `#14091A 0% 0% no-repeat padding-box`};
-     
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  border: ${({ selected, past }) =>
-    selected ? `solid 1px #B3C53F` : past ? `solid 1px #8a33b9` : `solid 1px #666666`};
-  position: absolute;
-  top: 36px;
-`;
-
-const Year = styled.span`
-  font: 500 14px Kumbh Sans;
-  color: #b3c53f;
-  position: absolute;
-  opacity: ${({ selected }) => (selected ? 1 : 0)};
-  top: 54px;
-`;
 
 const Influences = () => {
   const [state, setState] = useState(info[0]);
@@ -43,43 +18,14 @@ const Influences = () => {
   ));
 
   return (
-    <div style={{ backgroundColor: "#180920", height: "100vh" }}>
-      <h1
-        style={{
-          font: "24px/40px Hidden Focus",
-          letterSpacing: 1.44,
-          color: "#F9EFFF",
-          width: "80%",
-          margin: "auto",
-          padding: "16px 0",
-        }}
-      >
-        Influences
-      </h1>
-      <div
-        style={{
-          // alignSelf: "center",
-          // position: "relative",
-          // height: "100vh",
-          // display: "flex",
-          // flexDirection: "column",
-          // alignItems: "center",
-          // backgroundColor: "#8b33b9",
-          padding: 24,
-        }}
-      >
+    <div style={{ backgroundColor: "#180920", height: '100vh' }}>
+
+      <Heading>Influences</Heading>
+
+      <PairWrapper>
         <div
           className="flex"
-          style={
-            {
-              // padding: 60,
-              // backgroundColor: "#1d0d25",
-              // margin: 40,
-              height: "60vh",
-              justifyContent: 'space-between'
-            }
-          }
-        >
+          style={{ height: "60vh", justifyContent: 'space-between' }}>
           <div
             style={{
               display: "flex",
@@ -115,21 +61,11 @@ const Influences = () => {
               position: "relative",
             }}
           >
-            <h2 style={{ font: "30px/46px Mrs Saint Delafield", margin: 0 }}>
-              {state.name}
-            </h2>
-            <div style={{ height: '80%', overflow: 'scroll' }}>
-              <span
-                style={{
-                  font: "300 14px/18px Kumbh Sans",
-                  overflow: "scroll",
-                  height: "40%",
-                }}
-              >
-                {state.content}
-              </span>
+            <InfluencesName>{state.name}</InfluencesName>
+            <InfluencesTextWrapper>
+              <InfluencesText>{state.content}</InfluencesText>
+            </InfluencesTextWrapper>
 
-            </div>
             <div style={{
               height: 30, background: 'transparent linear-gradient(180deg, #14091A00 0%, #14091A 100%) 0% 0% no-repeat padding-box',
               position: 'absolute',
@@ -139,9 +75,9 @@ const Influences = () => {
           </div>
 
         </div>
-      </div>
+      </PairWrapper>
       {/* ///////// */}
-      <div style={{ width: "80%", position: "relative", display: "flex", margin: "auto" }} >
+      <div style={{ width: "80%", position: "relative", display: "flex", margin: "auto", marginTop: 16 }} >
         <div style={{ display: "flex", justifyContent: "space-between", position: "absolute", width: "100%" }}>
           <div style={{ height: 1, backgroundColor: "#666666", width: "100%", position: "absolute" }}></div>
           <div style={{ height: 1, backgroundColor: "#8A33B9", width: `calc(${width} * ${length}%)`, position: "absolute" }}></div>
