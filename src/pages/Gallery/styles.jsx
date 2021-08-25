@@ -43,6 +43,17 @@ export const Container = styled(motion.div)`
   & ${GalleryWrapper}:nth-child(3) ${LinkWrapper} {
     justify-content: flex-end;
   }
+  & ${GalleryWrapper}:nth-child(1) ${Title} {
+    top: 84px;
+  }
+  & ${GalleryWrapper}:nth-child(2) ${Title} {
+    bottom: 54px;
+    color: #b3c53f;
+    -webkit-text-stroke: 1px #b3c53f;
+  }
+  & ${GalleryWrapper}:nth-child(3) ${Title} {
+    bottom: 30px;
+  }
 `;
 
 export const Ul = styled.ul`

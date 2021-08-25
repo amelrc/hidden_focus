@@ -1,4 +1,5 @@
 import xmas from "../../images/WHYNOW/xmas.png";
+import highschool from '../../images/WHYNOW/highschool.jpg'
 import olp from "../../images/WHYNOW/olp.jpg";
 import passport from "../../images/WHYNOW/passport.jpg";
 import venice from "../../images/WHYNOW/venice.jpg";
@@ -8,6 +9,16 @@ export const WNData = [
   {
     image: xmas,
     text: "Ray’s 1st Christmas",
+    css: {
+      width: "50%",
+      display: "flex",
+      flexDirection: "column",
+      alignItems: "center",
+    },
+  },
+  {
+    image: highschool,
+    text: "Yearbook",
     css: {
       width: "50%",
       display: "flex",

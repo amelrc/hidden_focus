@@ -3,6 +3,7 @@ import Circles from "../../images/INFL/WEB-Infl-1.1-Circles-67.1KB.jpg";
 import Robert from "../../images/INFL/WEB-Infl-2-Robert-Mann-33.3KB.jpg";
 import Lawrence from "../../images/INFL/WEB-Infl-3-Lawrence-2037-263kb.jpg";
 import Laliberte from "../../images/INFL/WEB-Infl-4-2037-Laliberte-258kb.jpg";
+import Hands from '../../images/INFL/WEB--890-253kb.jpg';
 import Dorothy from "../../images/INFL/WEB-Infl-5-8063-Dorothy-371kb.jpg";
 import Carvalho from "../../images/INFL/WEB-Infl-6-John-Carvalho-284kb.jpg";
 import Amel from "../../images/INFL/WEB-Infl-7-9517-Amel-274kb.jpg";
@@ -269,7 +270,10 @@ export const info = [
 	{
 		id: 3,
 		date: "2003",
-		image: [{ img: Laliberte, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
+		image: [
+			{ image: Laliberte, css: { width: '100%', objectFit: 'contain', height: '100%' }, },
+			{ image: Hands, css: { width: '60%', objectFit: 'contain', height: '100%' }, }
+		],
 		name: "Robert Laliberte",
 		content: LaliberteText,
 		// css: { width: "80%" },
@@ -310,7 +314,7 @@ export const info = [
 		id: 8,
 		date: "1978",
 		image: [{ img: Cathy, css: { width: '100%', objectFit: 'contain', height: '100%' }, }],
-		name: "Cathy",
+		name: "Cathy Bedard",
 		content: CathyText,
 		// css: { width: "70%" },
 	},
