@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { motion } from "framer-motion";
 import Image from "../../components/Image";
 import { Link } from "react-router-dom";
+import { device } from "../../generalStyles";
 
 export const GalleryWrapper = styled.div`
   display: flex;
@@ -50,7 +51,11 @@ export const Container = styled(motion.div)`
     bottom: 54px;
     color: #b3c53f;
     -webkit-text-stroke: 1px #b3c53f;
+    @media ${device.tablet} {
+      bottom: 180px;
+    }
   }
+ 
   & ${GalleryWrapper}:nth-child(3) ${Title} {
     bottom: 30px;
   }
